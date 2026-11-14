@@ -25,6 +25,21 @@ Machine Perception (*Umetno zaznavanje*), University of Ljubljana · course grad
 
 The core methods (Gaussian kernels, edge thinning, Hough voting, Harris and Hessian responses, DLT and RANSAC, the eight-point algorithm, triangulation and PCA) are written with NumPy; OpenCV provides filtering, morphology and image I/O utilities. Each assignment folder keeps the original submission and brief; [`showcase/`](showcase/README.md) holds reusable modules, figure generators and numerical tests that regenerate every result in this README from one command.
 
+## Interactive showcase
+
+<a href="https://gabercmatej.github.io/Machine-perception-course/"><img src="showcase/site/screenshots/desktop.png" alt="Interactive showcase: pick an experiment, change its parameters and compare results" width="100%"></a>
+
+A static web app built on the generated results: choose any of the six studies, adjust parameters such as thresholds, kernel sizes or the number of PCA components, and compare outputs side by side. **[Open it →](https://gabercmatej.github.io/Machine-perception-course/)**
+
+## Quick start
+
+```sh
+cd showcase && python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python -m cvportfolio.generate                # regenerate every figure from the course data
+python -m unittest discover -s tests -v       # numerical checks of the core algorithms
+```
+
 ## Assignment 1
 
 ### Image processing, histograms & morphology
@@ -37,29 +52,12 @@ The core methods (Gaussian kernels, edge thinning, Hough voting, Harris and Hess
 
 [Original Python](assignment1/assigment1.py) · [Assignment PDF](assignment1/instructions.pdf) · [Detailed walkthrough](assignment1/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/01-pixels.png" alt="1.1 Basic image processing"><br><sub><b>1.1 Basic image processing</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/01-histograms.png" alt="1.2 Thresholding &amp; histograms"><br><sub><b>1.2 Thresholding & histograms</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/01-morphology.png" alt="1.3 Morphology &amp; connected components"><br><sub><b>1.3 Morphology & connected components</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/01-processing.png" alt="Bird segmentation &amp; foreground masking"><br><sub><b>Bird segmentation & foreground masking</b></sub></td></tr>
+</table>
 
-**1.1 Basic image processing**
-
-![1.1 Basic image processing](showcase/site/assets/01-pixels.png)
-
-**1.2 Thresholding & histograms**
-
-![1.2 Thresholding & histograms](showcase/site/assets/01-histograms.png)
-
-**1.3 Morphology & connected components**
-
-![1.3 Morphology & connected components](showcase/site/assets/01-morphology.png)
-
-**Bird segmentation & foreground masking**
-
-![Bird segmentation & foreground masking](showcase/site/assets/01-processing.png)
-
-### Interactive showcase
-
-**[Open Assignment 1 →](https://gabercmatej.github.io/Machine-perception-course/#study-1)**
-
-Compare the full segmentation pipeline with its extracted foreground. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 1 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-1)**: Compare the full segmentation pipeline with its extracted foreground. The task gallery also lets you browse every result shown above.
 
 ---
 
@@ -75,33 +73,13 @@ Compare the full segmentation pipeline with its extracted foreground. The task g
 
 [Original Python](assignment2/assigment2.py) · [Assignment PDF](assignment2/assignment2_instructions.pdf) · [Detailed walkthrough](assignment2/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/02-convolution.png" alt="2.1 1D convolution"><br><sub><b>2.1 1D convolution</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/02-filtering.png" alt="2.2 Image filtering"><br><sub><b>2.2 Image filtering</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/02-retrieval.png" alt="2.3 Global descriptors &amp; retrieval"><br><sub><b>2.3 Global descriptors & retrieval</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/02-sharpening.png" alt="Sharpening comparison"><br><sub><b>Sharpening comparison</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/02-distances.png" alt="Four distance functions &amp; frequency weighting"><br><sub><b>Four distance functions & frequency weighting</b></sub></td><td width="50%"></td></tr>
+</table>
 
-**2.1 1D convolution**
-
-![2.1 1D convolution](showcase/site/assets/02-convolution.png)
-
-**2.2 Image filtering**
-
-![2.2 Image filtering](showcase/site/assets/02-filtering.png)
-
-**2.3 Global descriptors & retrieval**
-
-![2.3 Global descriptors & retrieval](showcase/site/assets/02-retrieval.png)
-
-**Sharpening comparison**
-
-![Sharpening comparison](showcase/site/assets/02-sharpening.png)
-
-**Four distance functions & frequency weighting**
-
-![Four distance functions & frequency weighting](showcase/site/assets/02-distances.png)
-
-### Interactive showcase
-
-**[Open Assignment 2 →](https://gabercmatej.github.io/Machine-perception-course/#study-2)**
-
-Switch between noise removal and image retrieval. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 2 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-2)**: Switch between noise removal and image retrieval. The task gallery also lets you browse every result shown above.
 
 ---
 
@@ -117,29 +95,12 @@ Switch between noise removal and image retrieval. The task gallery also lets you
 
 [Original Python](assignment3/assigment3.py) · [Assignment PDF](assignment3/assignment3_instructions.pdf) · [Detailed walkthrough](assignment3/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/03-derivatives.png" alt="3.1 Image derivatives"><br><sub><b>3.1 Image derivatives</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/03-thinning.png" alt="3.2 Edge detection"><br><sub><b>3.2 Edge detection</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/03-edges.png" alt="3.3 Hough voting"><br><sub><b>3.3 Hough voting</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/03-circles.png" alt="Known-radius circle detection"><br><sub><b>Known-radius circle detection</b></sub></td></tr>
+</table>
 
-**3.1 Image derivatives**
-
-![3.1 Image derivatives](showcase/site/assets/03-derivatives.png)
-
-**3.2 Edge detection**
-
-![3.2 Edge detection](showcase/site/assets/03-thinning.png)
-
-**3.3 Hough voting**
-
-![3.3 Hough voting](showcase/site/assets/03-edges.png)
-
-**Known-radius circle detection**
-
-![Known-radius circle detection](showcase/site/assets/03-circles.png)
-
-### Interactive showcase
-
-**[Open Assignment 3 →](https://gabercmatej.github.io/Machine-perception-course/#study-3)**
-
-Move the edge threshold slider across four computed settings. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 3 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-3)**: Move the edge threshold slider across four computed settings. The task gallery also lets you browse every result shown above.
 
 ---
 
@@ -155,25 +116,12 @@ Move the edge threshold slider across four computed settings. The task gallery a
 
 [Original Python](assignment4/assigment4.py) · [Assignment PDF](assignment4/assignment4_instructions.pdf) · [Detailed walkthrough](assignment4/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/04-detectors.png" alt="4.1 Hessian &amp; Harris detectors"><br><sub><b>4.1 Hessian & Harris detectors</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/04-matches.png" alt="4.2 Local descriptor matching"><br><sub><b>4.2 Local descriptor matching</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/04-homography.png" alt="4.3 Homography &amp; RANSAC"><br><sub><b>4.3 Homography & RANSAC</b></sub></td><td width="50%"></td></tr>
+</table>
 
-**4.1 Hessian & Harris detectors**
-
-![4.1 Hessian & Harris detectors](showcase/site/assets/04-detectors.png)
-
-**4.2 Local descriptor matching**
-
-![4.2 Local descriptor matching](showcase/site/assets/04-matches.png)
-
-**4.3 Homography & RANSAC**
-
-![4.3 Homography & RANSAC](showcase/site/assets/04-homography.png)
-
-### Interactive showcase
-
-**[Open Assignment 4 →](https://gabercmatej.github.io/Machine-perception-course/#study-4)**
-
-Drag the alignment comparison slider and inspect matched points. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 4 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-4)**: Drag the alignment comparison slider and inspect matched points. The task gallery also lets you browse every result shown above.
 
 ---
 
@@ -189,25 +137,12 @@ Drag the alignment comparison slider and inspect matched points. The task galler
 
 [Original Python](assignment5/assigment5.py) · [Assignment PDF](assignment5/assignment5_instructions.pdf) · [Detailed walkthrough](assignment5/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/05-disparity.png" alt="5.1 Disparity from stereo images"><br><sub><b>5.1 Disparity from stereo images</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/05-epipolar.png" alt="5.2 Fundamental matrix"><br><sub><b>5.2 Fundamental matrix</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/05-stereo.png" alt="5.3 Linear triangulation"><br><sub><b>5.3 Linear triangulation</b></sub></td><td width="50%"></td></tr>
+</table>
 
-**5.1 Disparity from stereo images**
-
-![5.1 Disparity from stereo images](showcase/site/assets/05-disparity.png)
-
-**5.2 Fundamental matrix**
-
-![5.2 Fundamental matrix](showcase/site/assets/05-epipolar.png)
-
-**5.3 Linear triangulation**
-
-![5.3 Linear triangulation](showcase/site/assets/05-stereo.png)
-
-### Interactive showcase
-
-**[Open Assignment 5 →](https://gabercmatej.github.io/Machine-perception-course/#study-5)**
-
-Rotate the reconstructed 3D house and inspect the two input views. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 5 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-5)**: Rotate the reconstructed 3D house and inspect the two input views. The task gallery also lets you browse every result shown above.
 
 ---
 
@@ -223,29 +158,12 @@ Rotate the reconstructed 3D house and inspect the two input views. The task gall
 
 [Original Python](assignment6/exercise6.py) · [Assignment PDF](assignment6/assignment6_instructions.pdf) · [Detailed walkthrough](assignment6/README.md)
 
-### Working solution results
+<table>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/06-point-pca.png" alt="6.1 Direct PCA"><br><sub><b>6.1 Direct PCA</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/06-dual-pca.png" alt="6.2 Dual PCA"><br><sub><b>6.2 Dual PCA</b></sub></td></tr>
+<tr><td width="50%" valign="top"><img src="showcase/site/assets/06-pca.png" alt="6.3 Face-space decomposition"><br><sub><b>6.3 Face-space decomposition</b></sub></td><td width="50%" valign="top"><img src="showcase/site/assets/06-eigenfaces.png" alt="Learned eigenfaces"><br><sub><b>Learned eigenfaces</b></sub></td></tr>
+</table>
 
-**6.1 Direct PCA**
-
-![6.1 Direct PCA](showcase/site/assets/06-point-pca.png)
-
-**6.2 Dual PCA**
-
-![6.2 Dual PCA](showcase/site/assets/06-dual-pca.png)
-
-**6.3 Face-space decomposition**
-
-![6.3 Face-space decomposition](showcase/site/assets/06-pca.png)
-
-**Learned eigenfaces**
-
-![Learned eigenfaces](showcase/site/assets/06-eigenfaces.png)
-
-### Interactive showcase
-
-**[Open Assignment 6 →](https://gabercmatej.github.io/Machine-perception-course/#study-6)**
-
-Change the number of PCA components and compare face reconstructions. The task gallery also lets you browse every result shown above.
+▶ **[Open Assignment 6 in the interactive showcase](https://gabercmatej.github.io/Machine-perception-course/#study-6)**: Change the number of PCA components and compare face reconstructions. The task gallery also lets you browse every result shown above.
 
 ---
 
