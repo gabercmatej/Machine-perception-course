@@ -2,7 +2,7 @@
 
 Progress from local intensity changes to thin edges and geometric line or circle hypotheses.
 
-[Original Python submission](assigment3.py) · [Assignment PDF](assignment3_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-3)
+[Original Python submission](assigment3.py) · [Assignment PDF](assignment3_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-3)
 
 
 ### 3.1 Image derivatives

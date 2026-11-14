@@ -2,7 +2,7 @@
 
 Use the relationship between two views to estimate pixel displacement and recover sparse 3D structure.
 
-[Original Python submission](assigment5.py) · [Assignment PDF](assignment5_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-5)
+[Original Python submission](assigment5.py) · [Assignment PDF](assignment5_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-5)
 
 
 ### 5.1 Disparity from stereo images

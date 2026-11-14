@@ -2,7 +2,7 @@
 
 Build local signal operators, compare noise-removal filters, and search an image collection with compact color descriptions.
 
-[Original Python submission](assigment2.py) · [Assignment PDF](assignment2_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-2)
+[Original Python submission](assigment2.py) · [Assignment PDF](assignment2_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-2)
 
 
 ### 2.1 1D convolution

@@ -2,7 +2,7 @@
 
 Find distinctive points, match local descriptions across views, and estimate an image alignment despite outliers.
 
-[Original Python submission](assigment4.py) · [Assignment PDF](assignment4_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-4)
+[Original Python submission](assigment4.py) · [Assignment PDF](assignment4_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-4)
 
 
 ### 4.1 Hessian & Harris detectors

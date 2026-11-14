@@ -2,7 +2,7 @@
 
 Learn directions of variation, compress observations, and reconstruct faces from a small set of coefficients.
 
-[Original Python submission](exercise6.py) · [Assignment PDF](assignment6_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-6)
+[Original Python submission](exercise6.py) · [Assignment PDF](assignment6_instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-6)
 
 
 ### 6.1 Direct PCA

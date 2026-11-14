@@ -1,6 +1,6 @@
 # Interactive companion & reproducible results
 
-[← Browse the six original assignments](../README.md) · [Open the live companion](https://gabercmatej.github.io/computer-vision-python/)
+[← Browse the six original assignments](../README.md) · [Open the live companion](https://gabercmatej.github.io/Machine-perception-course/)
 
 This folder contains the presentation and runnable adaptations added to the original coursework. The main repository README walks through all 18 main exercises. Original Python scripts, PDFs and supplied datasets live in the six assignment folders at the repository root.
 

@@ -7,8 +7,8 @@ This portfolio starts with Matej Gaberc's six Python submissions for **Umetno za
 | Layer | Purpose | Authorship / role |
 |---|---|---|
 | `assignment1/` … `assignment6/` | Original scripts, assignment briefs, utilities and data | Matej's submissions alongside supplied course materials |
-| `showcase/cvportfolio/` | Selected algorithms extracted into importable modules, corrected and checked | Adapted from the submissions; portfolio refactoring and fixes prepared with Codex assistance |
-| `showcase/site/` | Visual explorer, real figures and measured outputs | Portfolio presentation added with Codex assistance |
+| `showcase/cvportfolio/` | Selected algorithms extracted into importable modules, corrected and checked | Adapted from the submissions; refactored into reusable modules, corrected and tested |
+| `showcase/site/` | Visual explorer, real figures and measured outputs | Portfolio presentation added after the course |
 
 The viewer does not run Python in the browser. It selects saved Python outputs, including four edge thresholds and six PCA component counts. The alignment slider compares two images in a common coordinate frame. The 3D animation is rendered from actual triangulated coordinates.
 

@@ -1,5 +1,5 @@
 'use strict';
-const repo = 'https://github.com/gabercmatej/computer-vision-python';
+const repo = 'https://github.com/gabercmatej/Machine-perception-course';
 const data = window.PORTFOLIO_METRICS.experiments;
 const experiments = [
  {id:1,title:'Image processing',short:'Pixels & masks',category:'SEGMENTATION',file:'processing',image:'01-processing.png',summary:'Separate a foreground from its background using intensity, a histogram and morphology.',method:'Pixels become floating-point arrays. A normalized histogram describes intensity, Otsu’s criterion selects a threshold, and morphological closing fills small gaps in the binary mask.',insight:'The histogram exposes why a threshold works. Closing improves continuity, but can also merge nearby regions. The foreground is selected by brightness, not semantic understanding.',limitations:'This is a threshold-based demonstration on the supplied bird image. It is not a learned segmentation model and will not generalize to arbitrary scenes.',stats:[[data[1].threshold.toFixed(3),'Otsu threshold'],[(data[1].foreground_fraction*100).toFixed(1)+'%','Pixels in foreground'],['256','Threshold bins']]},

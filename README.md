@@ -1,12 +1,29 @@
 # Computer Vision in Python
 
-**Matej Gaberc · Machine Perception / Umetno zaznavanje**
+**Six classical computer-vision studies in Python and NumPy, with reproducible figures, numerical tests and an interactive showcase.**
+Machine Perception (*Umetno zaznavanje*), University of Ljubljana · course grade 9/10
 
-Six Python assignments covering image processing, feature extraction, geometric reconstruction and dimensionality reduction. Each section below gives a quick overview, working solution results, and an interactive showcase.
+[**▶ Open the interactive showcase**](https://gabercmatej.github.io/Machine-perception-course/) · [Run it yourself](#run-the-code) · [Provenance](PROVENANCE.md)
 
-[Assignment 1](#assignment-1) · [Assignment 2](#assignment-2) · [Assignment 3](#assignment-3) · [Assignment 4](#assignment-4) · [Assignment 5](#assignment-5) · [Assignment 6](#assignment-6)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-vectorised-013243?logo=numpy&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-utilities-5C3EE8?logo=opencv&logoColor=white)
+![Tests](https://img.shields.io/badge/numerical%20checks-unittest-2EA44F)
 
-The original Python submissions and PDFs are in the six assignment folders. Result figures were regenerated from the coursework using the runnable adaptations in [showcase/](showcase/README.md); they are not historical screenshots. [Implementation notes and corrections](PROVENANCE.md).
+![Overview of the six studies: segmentation and morphology, histogram retrieval, Hough transform, RANSAC homography, epipolar geometry, eigenfaces](showcase/site/assets/overview.png)
+
+## What is inside
+
+| # | Study | Implemented here | Key idea |
+|---|---|---|---|
+| 1 | [Image processing, histograms & morphology](#assignment-1) | thresholding, normalised histograms, Otsu, erosion/dilation, connected components | images are arrays; shape is a set operation |
+| 2 | [Convolution, filtering & image retrieval](#assignment-2) | 1D/2D convolution, Gaussian and median filters, 3D colour histograms, four distance measures | local operators and global descriptors |
+| 3 | [Derivatives, edges & the Hough transform](#assignment-3) | Gaussian derivatives, gradient magnitude and angle, non-maximum suppression, line and circle Hough voting | evidence accumulates in parameter space |
+| 4 | [Feature detection, matching & homography](#assignment-4) | Hessian and Harris detectors, mutual nearest-neighbour matching, DLT homography, RANSAC | robust estimation despite outliers |
+| 5 | [Disparity, epipolar geometry & triangulation](#assignment-5) | NCC stereo matching, eight-point fundamental matrix with rank-2 constraint, linear triangulation | two views constrain a point to a line |
+| 6 | [PCA, dimensionality reduction & eigenfaces](#assignment-6) | direct and dual PCA, reconstruction from k components, eigenfaces | most image variance lives in few directions |
+
+The core methods (Gaussian kernels, edge thinning, Hough voting, Harris and Hessian responses, DLT and RANSAC, the eight-point algorithm, triangulation and PCA) are written with NumPy; OpenCV provides filtering, morphology and image I/O utilities. Each assignment folder keeps the original submission and brief; [`showcase/`](showcase/README.md) holds reusable modules, figure generators and numerical tests that regenerate every result in this README from one command.
 
 ## Assignment 1
 
@@ -40,7 +57,7 @@ The original Python submissions and PDFs are in the six assignment folders. Resu
 
 ### Interactive showcase
 
-**[Open Assignment 1 →](https://gabercmatej.github.io/computer-vision-python/#study-1)**
+**[Open Assignment 1 →](https://gabercmatej.github.io/Machine-perception-course/#study-1)**
 
 Compare the full segmentation pipeline with its extracted foreground. The task gallery also lets you browse every result shown above.
 
@@ -82,7 +99,7 @@ Compare the full segmentation pipeline with its extracted foreground. The task g
 
 ### Interactive showcase
 
-**[Open Assignment 2 →](https://gabercmatej.github.io/computer-vision-python/#study-2)**
+**[Open Assignment 2 →](https://gabercmatej.github.io/Machine-perception-course/#study-2)**
 
 Switch between noise removal and image retrieval. The task gallery also lets you browse every result shown above.
 
@@ -120,7 +137,7 @@ Switch between noise removal and image retrieval. The task gallery also lets you
 
 ### Interactive showcase
 
-**[Open Assignment 3 →](https://gabercmatej.github.io/computer-vision-python/#study-3)**
+**[Open Assignment 3 →](https://gabercmatej.github.io/Machine-perception-course/#study-3)**
 
 Move the edge threshold slider across four computed settings. The task gallery also lets you browse every result shown above.
 
@@ -154,7 +171,7 @@ Move the edge threshold slider across four computed settings. The task gallery a
 
 ### Interactive showcase
 
-**[Open Assignment 4 →](https://gabercmatej.github.io/computer-vision-python/#study-4)**
+**[Open Assignment 4 →](https://gabercmatej.github.io/Machine-perception-course/#study-4)**
 
 Drag the alignment comparison slider and inspect matched points. The task gallery also lets you browse every result shown above.
 
@@ -188,7 +205,7 @@ Drag the alignment comparison slider and inspect matched points. The task galler
 
 ### Interactive showcase
 
-**[Open Assignment 5 →](https://gabercmatej.github.io/computer-vision-python/#study-5)**
+**[Open Assignment 5 →](https://gabercmatej.github.io/Machine-perception-course/#study-5)**
 
 Rotate the reconstructed 3D house and inspect the two input views. The task gallery also lets you browse every result shown above.
 
@@ -226,7 +243,7 @@ Rotate the reconstructed 3D house and inspect the two input views. The task gall
 
 ### Interactive showcase
 
-**[Open Assignment 6 →](https://gabercmatej.github.io/computer-vision-python/#study-6)**
+**[Open Assignment 6 →](https://gabercmatej.github.io/Machine-perception-course/#study-6)**
 
 Change the number of PCA components and compare face reconstructions. The task gallery also lets you browse every result shown above.
 

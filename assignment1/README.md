@@ -2,7 +2,7 @@
 
 Images become arrays: manipulate pixels, measure intensity distributions, and separate foreground regions.
 
-[Original Python submission](assigment1.py) · [Assignment PDF](instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/computer-vision-python/#study-1)
+[Original Python submission](assigment1.py) · [Assignment PDF](instructions.pdf) · [Interactive companion](https://gabercmatej.github.io/Machine-perception-course/#study-1)
 
 
 ### 1.1 Basic image processing
