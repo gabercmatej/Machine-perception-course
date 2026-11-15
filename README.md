@@ -3,7 +3,9 @@
 **Six classical computer-vision studies in Python and NumPy, with reproducible figures, numerical tests and an interactive showcase.**
 Machine Perception (*Umetno zaznavanje*), University of Ljubljana · course grade 9/10
 
-[**▶ Open the interactive showcase**](https://gabercmatej.github.io/Machine-perception-course/) · [Run it yourself](#run-the-code) · [Provenance](PROVENANCE.md)
+[![Try the live demo](https://img.shields.io/badge/▶_Try_the_live_demo-explore_all_six_studies-6D5DFC?style=for-the-badge)](https://gabercmatej.github.io/Machine-perception-course/)
+
+[Run it yourself](#quick-start) · [Provenance](PROVENANCE.md)
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-vectorised-013243?logo=numpy&logoColor=white)
